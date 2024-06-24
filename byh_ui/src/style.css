@@ -1,0 +1,19 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px; /* szerokość Sidebar */
+  width: 300px; /* szerokość Sidebar */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Przezroczysto-szare tło */
+  transition: right 0.3s ease-in-out; /* Animacja wysuwania */
+  z-index: 1000; /* Ustaw z-index na wartość większą niż treść */
+}
+
+.sidebar.open {
+  right: 0;
+  margin-right: 0;
+}
+
+.icon-text {
+  color: white;
+}
